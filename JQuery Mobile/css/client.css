@@ -1,0 +1,110 @@
+/* Header page*/
+.page_header h1.ui-title, .page_header h2.ui-title {
+	font-size: 2em;
+	font-weight: 600;
+}
+
+.page_header h1.ui-title{
+ 	padding-bottom: 0;
+}
+
+.page_header h2.ui-title{
+ 	padding-top:  0;
+}
+
+.page_header.small-head h1.ui-title{
+    margin: 0 0 0 4%;
+    padding: 1% 0 0 0;
+}
+
+
+.page_header h1.ui-title{
+	padding-top:  1%;
+}
+.page_header h2.ui-title{
+ 	padding-bottom: 1%;	 	
+}	
+
+
+@media (min-height: 495px) {
+	.page_header h1.ui-title{
+		padding-top:  5%;
+	}
+
+	.page_header h2.ui-title{
+	 	padding-bottom: 5%;	 	
+	}	
+
+	.page_header {
+		margin-bottom: 12%;
+	}
+}
+
+
+
+/* Footer page*/
+.page_footer .ui-block-a, .page_footer .ui-block-b, .page_footer .ui-block-c {
+	text-align: center;
+}
+.page_footer .ui-block-a a, .page_footer .ui-block-b a {
+	width: 88%;
+}
+
+
+
+/* Home page*/
+#home .page_content .ui-block-a a, #home .page_content .ui-block-b a {
+	padding: 12%;
+}
+
+
+
+/* Accommodations description pages  */
+#main .page_content form .ui-input-has-clear {
+	padding-right: 0;
+}
+
+@media (max-width: 405px) {
+	#info .page_content, #main .page_content {
+		width: 100%;
+		padding-left: 0; 
+		padding-right: 0;
+	}
+
+
+	#main .page_content input[type="search"] { 
+	  font-size: 0.8em;
+	}
+}
+
+#home section, #nw .page_content, #nw3 .page_content, #n7 .page_content {
+	text-align: center;
+}
+
+.page_content .description {
+	text-align: left;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.ui-panel-wrapper .page_content section {
+	color: initial;
+}
+ .ui-panel-wrapper .page_content section .favorites.plain.ui-btn-icon-left:after { 
+	background-color: rgba(0,0,0,.3);
+ }
+
+.ui-panel-wrapper .page_content section .favorites.color-toggled {
+	color:#38c;
+}
+.ui-panel-wrapper .page_content section .favorites.color-toggled.ui-btn-icon-left:after {
+	background-color:#38c;
+}
+
+/*About page*/
+#info .ui-btn:focus {
+	box-shadow: initial;
+}

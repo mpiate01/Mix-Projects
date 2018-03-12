@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Zedland's University</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/client.css">
+	<script src="script/client.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/map.css">
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp">
+	</script>
+	<script src="./script/map.js"></script>	
+</head>
+<body>
+	<!-- START PAGE home -->
+	<div id="home" data-role="page" class="ui-page" data-theme="a">
+		<!-- START HEADER -->
+		<header class="page_header ui-grid-solo" data-role="header" data-position="fixed">
+			<h1 class="ui-title">Zedland</h1>
+			<h2 class="ui-title">Home</h2>			
+		</header>
+		<!-- END HEADER -->
+	
+		<!-- START CONTENT -->
+		<div class="page_content ui-grid-solo" data-role="content" >
+			<!-- NAV STARTS -->
+			<nav data-role="navbar"> 
+				<div class="ui-grid-solo">
+				    <div class="ui-block-a"><a href="accommodation.html" data-prefetch class="ui-btn ui-shadow ui-corner-all"  data-transition="slidefade">Rent</a></div>
+				</div>
+				<div class="ui-grid-a">
+				    <div class="ui-block-a"><a href="#sign_in" class="ui-btn ui-shadow ui-corner-all" data-transition="slidefade">Sign in</a></div>
+					<div class="ui-block-b"><a href="#register" class="ui-btn ui-shadow ui-corner-all" data-prefetch data-transition="slidefade">Register</a></div>
+				</div>
+				<div class="ui-grid-a">
+				    <div class="ui-block-a"><a href="about.html" class="ui-btn ui-shadow ui-corner-all" data-prefetch data-transition="slidefade">About us</a></div>
+				    <div class="ui-block-b"><a href="#contact" class="ui-btn ui-shadow ui-corner-all">Contact us</a></div>
+				</div>
+				
+			</nav>
+			<!-- NAV ENDS -->
+			<section>
+			    <p>University of Zedland helps you on searching through thousands of properties such as houses, flats and studios and find the best one for you.</p>
+			</section>
+		</div>
+		<!-- END CONTENT -->
+
+		<!-- START FOOTER -->
+		<footer class="page_footer" data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-id="footernav">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<a href="#" data-role="button" data-icon="user" data-iconpos="top">My Z-H</a>
+					</div>
+					<div class="ui-block-b">
+						<a href="mailto:zed@university.co.uk" data-role="button" data-icon="mail" data-iconpos="top">zed@university.co.uk</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- END FOOTER -->
+	</div>
+	<!-- END PAGE home -->
+
+	<!-- START PAGE signin -->
+	<div id="sign_in" data-role="page" class="ui-page" data-theme="a">
+		<!-- START HEADER -->
+		<header class="page_header small-head ui-grid-solo" data-role="header" data-position="fixed">
+			<a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+			<a href="#home" data-icon="home" data-transition="slidefade" data-direction="reverse" data-iconpos="notext">Home</a>
+			<h1 class="ui-title">Zedland-H</h1>
+		</header>
+		<!-- END HEADER -->
+	
+		<!-- START CONTENT -->
+		<div class="page_content ui-grid-solo" data-role="content">
+			<section>
+				<h2>Login</h2>
+				<form>
+					<div data-role="controlgroup fieldcontain" class="ui-hide-label">
+						<label class="sr-view" for="usernl">Username:</label>
+						<input type="text" name="namel" id="usernl" value="" data-mini="true" placeholder="Username">
+					</div>
+					<div data-role="controlgroup fieldcontain" class="ui-hide-label">
+						<label class="sr-view" for="passwl">Password:</label>
+						<input type="password" name="passwl" id="passwl" value="" data-mini="true" placeholder="Password">
+					</div>
+					<div class="controlgroup">
+						<input type="submit" name="sbt" value="Log-in">
+					</div>
+				</form>
+				<p><a href="#home" data-role="button" data-icon="back" data-transition="slidefade" data-direction="reverse">Back</a></p>		    
+			</section>
+		</div>
+		<!-- END CONTENT -->
+
+		<!-- NAV panel STARTS -->
+		<div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel" class="ui-panel ui-panel-position-left ui-panel-display-reveal ui-body-a ui-panel-animate ui-panel-open">
+	        <ul data-role="listview">
+	           	<li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+				<li><a href="#home" data-transition="slidefade">Home</a></li>
+				<li><a href="#register" data-transition="slidefade">Register</a></li>
+				<li><a href="accommodation.html" data-prefetch data-transition="slidefade">Rent</a></li>
+				<li><a href="about.html" data-prefetch data-transition="slidefade">About us</a></li>
+				<li><a href="#contact" data-transition="slidefade">Contact us</a></li>
+			</ul>
+		</div>
+		<!-- NAV panel ENDS -->
+
+		<!-- START FOOTER -->
+		<footer class="page_footer" data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-id="footernav">
+				<div class="ui-grid-b">
+					<div class="ui-block-a">
+						<a href="#" data-role="button" data-icon="user" data-iconpos="top">My Z-H</a>
+					</div>
+					<div class="ui-block-b">
+						<a href="tel:+0270523546" data-role="button" data-icon="phone" data-iconpos="top">CALL</a>
+					</div>
+					<div class="ui-block-c">
+						<a href="mailto:zed@university.co.uk" data-role="button" data-icon="mail" data-iconpos="top">EMAIL</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- END FOOTER -->
+	</div>
+	<!-- END PAGE signin -->
+	
+<!-- START PAGE register -->
+	<div id="register" data-role="page" class="ui-page" data-theme="a">
+		<!-- START HEADER -->
+		<header class="page_header small-head ui-grid-solo" data-role="header" data-position="fixed">
+			<a href="#nav-panelreg" data-icon="bars" data-iconpos="notext">Menu</a>
+			<a href="#home" data-icon="home" data-transition="slidefade" data-direction="reverse" data-iconpos="notext">Home</a>
+			<h1 class="ui-title">Zedland-H</h1>
+		</header>
+		<!-- END HEADER -->
+	
+		<!-- START CONTENT -->
+		<div class="page_content ui-grid-solo" data-role="content">
+			<section>
+				<h2>Register</h2>
+				<form>
+					<div data-role="controlgroup fieldcontain" class="ui-hide-label">
+						<label class="sr-view" for="usernr">Username:</label>
+						<input type="text" name="namer" id="usernr" value="" data-mini="true" placeholder="Username">
+					</div>
+					<div data-role="controlgroup fieldcontain" class="ui-hide-label">
+						<label class="sr-view" for="passwr">Password:</label>
+						<input type="password" name="passwr" id="passwr" value="" data-mini="true" placeholder="Password">
+					</div>
+					<div class="controlgroup">
+						<input type="submit" name="sbt" value="Register">
+					</div>
+				</form>
+				<p><a href="#home" data-role="button" data-icon="back" data-transition="slidefade" data-direction="reverse">Back</a></p>		    
+			</section>
+		</div>
+		<!-- END CONTENT -->
+
+		<!-- NAV panel STARTS -->
+		<div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panelreg" class="ui-panel ui-panel-position-left ui-panel-display-reveal ui-body-a ui-panel-animate ui-panel-open">
+	        <ul data-role="listview">
+	           	<li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+				<li><a href="#home" data-transition="slidefade">Home</a></li>
+				<li><a href="#sign_in" data-transition="slidefade">Sign in</a></li>
+				<li><a href="accommodation.html" data-prefetch  data-transition="slidefade">Rent</a></li>
+				<li><a href="about.html" data-prefetch data-transition="slidefade">About us</a></li>
+				<li><a href="#contact" data-transition="slidefade">Contact us</a></li>
+			</ul>
+		</div>
+		<!-- NAV panel ENDS -->
+
+		<!-- START FOOTER -->
+		<footer class="page_footer" data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-id="footernav">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<a href="#" data-role="button" data-icon="user" data-iconpos="top">My Z-H</a>
+					</div>
+					<div class="ui-block-b">
+						<a href="mailto:zed@university.co.uk" data-role="button" data-icon="mail" data-iconpos="top">zed@university.co.uk</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- END FOOTER -->
+	</div>
+	<!-- END PAGE register -->	
+<!-- START PAGE contact -->
+	<div id="contact" data-role="page" class="ui-page" data-theme="a">
+		<!-- START HEADER -->
+		<header class="page_header small-head ui-grid-solo" data-role="header" data-position="fixed">
+			<a href="#nav-panelcont" data-icon="bars" data-iconpos="notext">Menu</a>
+			<a href="#home" data-icon="home" data-transition="slidefade" data-direction="reverse" data-iconpos="notext">Home</a>
+			<h1 class="ui-title" role="heading" aria-level="1">Zedland-H</h1>
+		</header>
+		<!-- END HEADER -->
+	
+		<!-- START CONTENT -->
+		<div class="page_content ui-grid-solo" data-role="content">
+			<section>
+				<h2>How to Contact us</h2>
+				<p>Email: <a href="mailto:zed@university.co.uk?Subject=Query%20General">zed@university.co.uk</a></p>
+				<p>Telephone number: <a href="tel:+0270523546">+0270523546</a></p>
+				<p><a href="#home" data-role="button" data-icon="back" data-transition="slidefade" data-direction="reverse">Back</a></p>		    
+			</section>
+		</div>
+		<!-- END CONTENT -->
+
+		<!-- NAV panel STARTS -->
+		<div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panelcont" class="ui-panel ui-panel-position-left ui-panel-display-reveal ui-body-a ui-panel-animate ui-panel-open">
+	        <ul data-role="listview">
+	           	<li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+				<li><a href="#home" data-transition="slidefade">Home</a></li>
+				<li><a href="#sign_in" data-transition="slidefade">Sign in</a></li>
+				<li><a href="accommodation.html" data-prefetch  data-transition="slidefade">Rent</a></li>
+				<li><a href="about.html" data-prefetch data-transition="slidefade">About us</a></li>
+			</ul>
+		</div>
+		<!-- NAV panel ENDS -->
+
+		<!-- START FOOTER -->
+		<footer class="page_footer" data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-id="footernav">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<a href="#" data-role="button" data-icon="user" data-iconpos="top">My Z-H</a>
+					</div>
+					<div class="ui-block-b">
+						<a href="mailto:zed@university.co.uk" data-role="button" data-icon="mail" data-iconpos="top">zed@university.co.uk</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- END FOOTER -->
+	</div>
+	<!-- END PAGE contact -->		
+</body>
+</html>

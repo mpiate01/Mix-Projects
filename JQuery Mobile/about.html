@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Zedland's University</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/client.css">
+	<script src="script/client.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/map.css">
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp">
+	</script>
+	<script src="./script/map.js"></script>	
+</head>
+<body>	
+	<!-- START PAGE info -->
+	<div id="info" data-role="page" class="ui-page" data-theme="a">
+		<!-- START HEADER -->
+		<header class="page_header small-head ui-grid-solo" data-role="header" data-position="fixed">
+			<a href="#nav-panela" data-icon="bars" data-iconpos="notext">Menu</a>
+			<a href="index.html#home" data-icon="home" data-transition="slidefade" data-direction="reverse" data-iconpos="notext">Home</a>
+			<h1 class="ui-title">Zedland-H</h1>
+		</header>
+		<!-- END HEADER -->
+
+		<!-- START CONTENT -->
+		<div class="page_content" data-role="content">
+			<section class="page_content" data-role="content" class="ui-grid-solo" >
+				<!-- Set starts -->
+				<div data-role="collapsible-set"> 
+					<div data-role="collapsible" data-collapsed="false">
+						<h3>About Us</h3>
+						<p>The University of Zedland has an intake of 5000+ students per annum. A large number of the students find their accommodation through the University Accommodation Services.</p>
+						<p>Students can choose from a mixture of houses flats studios and shared rooms. Students tend to gravitate towards particular areas when choosing accommodation.</p>
+					</div> 
+					<div data-role="collapsible">
+						<h3>Student Homes Guide</h3>
+						<p><a href="#">Check out our Student Homes Guide</a> section to learn how the system works and plenty more.</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>Student Homes Handbook</h3>
+						<p>Not sure how to pay your rent, set up your utility accounts? <a href="#">Check out our student handbook</a>.</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>The Team</h3>
+						<p><a href="#">Check out our team</a> that will help you through the process.</p>
+					</div>					
+				</div>
+				<!-- Set ends -->
+				<p><a href="mailto:zed@university.co.uk?Subject=Query%20General" class="ui-btn ui-icon-mail ui-btn-icon-left ui-corner-all">Need more help? Email us</a></p>
+				<p><a href="index.html#home" data-role="button" data-icon="back" data-transition="slidefade" data-direction="reverse">Back</a></p>		    
+			</section>
+		</div>
+		<!-- END CONTENT -->
+
+		<!-- NAV panel STARTS -->
+		<div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panela">
+		    <ul data-role="listview">
+		        <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+				<li><a href="index.html#home" data-transition="slidefade">Home</a></li>
+				<li><a href="index.html#sign_in" data-transition="slidefade">Sign in</a></li>
+				<li><a href="index.html#register" data-transition="slidefade">Register</a></li>
+				<li><a href="accommodation.html" data-transition="slidefade" data-prefetch>Rent</a></li>
+				<li><a href="#contact" data-transition="slidefade">Contact us</a></li>
+			</ul>
+		</div>
+		<!-- NAV panel ENDS -->
+
+		<!-- START FOOTER -->
+		<footer class="page_footer" data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-id="footernav">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<a href="#" data-role="button" data-icon="user" data-iconpos="top">My Z-H</a>
+					</div>
+					<div class="ui-block-b">
+						<a href="mailto:zed@university.co.uk" data-role="button" data-icon="mail" data-iconpos="top">zed@university.co.uk</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- END FOOTER -->
+	</div>
+	<!-- END PAGE info -->
+</body>
+</html>

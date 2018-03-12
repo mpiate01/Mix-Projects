@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Zedland's University</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/client.css">
+	<script src="script/client.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/map.css">
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp">
+	</script>
+	<script src="./script/map.js"></script>	
+</head>
+<body>
+	<!-- START PAGE  -->
+	<div id="nw3" data-role="page" class="ui-page" data-theme="a">
+		<!-- START HEADER -->
+		<header class="page_header small-head ui-grid-solo" data-role="header" data-position="fixed">
+			<a href="#nav-panelnw3" data-icon="bars" data-iconpos="notext">Menu</a>
+			<a href="accommodation.html" data-icon="back" data-transition="slidefade" data-direction="reverse" data-iconpos="notext" data-prefetch>Back</a>
+			<h1 class="ui-title">Zedland-H</h1>
+		</header>
+		<!-- END HEADER -->
+
+		<!-- START CONTENT -->
+		<div class="page_content" data-role="content" class="ui-grid-solo" >
+			<section class="description">
+				<h2>Camden - NW3</h2>
+				<h3>Sharing - 700 pounds</h3>
+				<p>Available now</p>
+				<p>All bills included! We are delighted to present this amazing single room to let! The property is located on the main road meaning you have all he local shops right on your doorstep.</p>
+				<figure class="display_img">
+					<img src="img/camden_nw3.jpg" alt="Sharing - 700 pounds">
+				</figure>
+			</section>
+			<section class="map_container">
+				<div class="icon_group" data-role="controlgroup" data-type="horizontal" data-mini="true">
+					<a href="tel:+7810183041" class="ui-btn ui-icon-phone ui-btn-icon-left ui-corner-all">+7810183041</a> 
+					<a href="mailto:zed@university.co.uk?Subject=Query%20Accommodation" class="ui-btn ui-icon-mail ui-btn-icon-left ui-corner-all">Email us</a>
+				</div>
+				<p><a href="#" data-role="button" data-mini="true" data-inline="true" data-icon="check" class="favorites">Save on favorites</a></p>
+				<div data-role="collapsible-set"> 
+					<div data-role="collapsible">
+						<h3>Check out the map</h3>
+						<div id="map-canvas-nw3" class="map-canvas"></div>
+						<p id="nogeolocation"></p>
+					</div>
+				</div>
+				<p><a href="accommodation.html" data-role="button" data-icon="back" data-transition="slidefade" data-direction="reverse" data-prefetch>Back</a></p>
+			</section>
+		</div>
+		<!-- ENDS CONTENT -->
+
+		<!-- NAV panel STARTS -->
+		<div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panelnw3">
+		    <ul data-role="listview">
+		        <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+				<li><a href="index.html#home" data-transition="slidefade" data-prefetch>Home</a></li>
+				<li><a href="index.html#sign_in" data-transition="slidefade" data-prefetch>Sign in</a></li>
+				<li><a href="index.html#register" data-transition="slidefade" data-prefetch>Register</a></li>
+				<li><a href="accommodation.html" data-transition="slidefade" data-prefetch>Rent</a></li>
+				<li><a href="about.html" data-prefetch data-transition="slidefade" data-prefetch>About us</a></li>
+				<li><a href="index.html#contact" data-transition="slidefade" data-prefetch>Contact us</a></li>
+			</ul>
+		</div>
+		<!-- NAV panel ENDS -->
+
+		<!-- START FOOTER -->
+		<footer class="page_footer" data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-id="footernav">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<a href="#" data-role="button" data-icon="user" data-iconpos="top">My Z-H</a>
+					</div>
+					<div class="ui-block-b">
+						<a href="mailto:zed@university.co.uk" data-role="button" data-icon="mail" data-iconpos="top">zed@university.co.uk</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- END FOOTER -->
+	</div>
+	<!-- END PAGE  -->
+</body>
+</html>
