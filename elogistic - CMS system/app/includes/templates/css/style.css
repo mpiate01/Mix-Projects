@@ -1,0 +1,127 @@
+body{
+background: lightgray;
+
+}
+#page{
+	font-size: 1.25em;
+    border: 1px solid grey;
+    background: lightgray;
+    /*padding: 0.5em 0 0.5em 1em;*/
+    padding: 0.5em;
+    margin: 1em;
+}
+a,a:visited {
+    color: black;
+    transition: font-size 1s;
+}
+#menu{
+	padding: 0;
+}
+
+#menu a {
+    text-decoration: none;
+    padding: 0.25em;
+    line-height: 1.5em;
+    display: block;
+    color: black;
+}
+
+#menu li{
+    display: block;
+    border: 1px solid black;
+    margin: 0.5em 0.25em 0.5em 0;
+    width: 100%;
+    max-width: 300px;
+}
+
+#menu li a:hover,#menu li a:focus {
+    color: white;
+    background: black;
+}
+p.error, span.error, .error{
+	color: red;
+}
+
+.flash{
+	font-weight: bold;
+    font-style: italic;	
+}
+
+input, textarea{
+	font-size: 0.7em;
+	width: 99%;
+}
+select{
+	max-width: 100%;
+	font-size: 0.7em;
+}
+input[type="submit"] {
+    width: initial;
+}
+input[type="checkbox"] {
+    width: initial;
+}
+
+.dList, .pack{
+    background-color: rgba(255,255,255,0.5);
+    padding: 0.2em 1em;
+    /*margin: 0em 1em 1em 0;	*/
+}
+
+.dList p:first-child{
+	border-bottom: 1px solid lightgrey;
+}
+.pack h2{
+	font-size: 1em;
+    text-decoration: none;
+    border-bottom: 1px solid lightgrey;
+    margin-top: 3.5em;
+}
+.pack h3, .pack2 h3{
+	font-size: 1em;
+}
+.pack p::after {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid black;
+    width: 70%;
+    content: "";
+    margin: 1em 0 0;
+}
+label {
+    display: block;
+}
+.field {
+    margin: 0 0 1.5em;
+    border: 1px solid black;
+    padding: 0.25em;
+    background-color: rgba(255,255,255,0.5);
+}
+.pack2{
+    background-color: rgba(255,255,255,0.5);
+    padding: 0.2em 1em;
+    margin-top: 1em;
+    /*margin: 2em 1em 1em 0;*/
+}
+
+.pack2 h2{
+	margin: 0.25em 0;
+}
+.pack2 a, .pack2 a:visited {
+	width: initial;
+    color: black;
+    font-size: 0.9em;
+    text-decoration: none;
+    padding: 0.25em;
+    box-shadow: 4px 4px 6px #888888;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.1);
+    transition: width 2s;	
+}
+.pack2 a:focus, .pack2 a:hover{
+	width: 90%;
+}
+a:hover, a:focus{
+	    font-size: 1.05em;
+	    text-decoration: blink;
+}
