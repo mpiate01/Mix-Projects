@@ -1,0 +1,50 @@
+--FONT x la pagina????
+
+--FOnt x logo paris
+
+--mettere come apice il th nel menu
+
+--da mettere il background al logo e vedere cm va
+
+--magari aggiungere qualche read more nell index
+
+--controllare x le immagini wrapper ( forse nn c vanno xke immagini sono piccole e 
+sfuocherebbero, DA SCRIVERE NELL ESSAY)
+
+--video size 480 * 360
+
+--PER L'ESSAY CONTROLLARE L ULTIMA PARTE DELL ULTIMO ESERCIZIO, ti fa aprire la pagina in un IE vecchio, parlare delle differenze e se sn accettabili
+
+USABILITY ****************************************************************
+
+--underlines for links
+--highlight current page
+--breadcrumbs
+--focus links
+--DELIVERY display
+--TABELLa
+--ARIA
+--VIDEO scaricabile con frase ARIA
+--PARLARE DEL BACK TO TOP x usability
+
+--crossbrowser :valid   :placeholder      
+
+--ho to show errors
+
+--line height 1.2em usata nei paragrafi x riuscire a leggere meglio 
+
+--wave.webaim.org
+--COLORI USATI il colore oro potrebbe essere troppo chiaro
+
+COSE NEGATIVE *************************************************************
+
+-- tableWrapper per shadow in ie  ma da problemi, c'e spazio tra table e wrapper se visualizzo la shadow, percio ho messo un background color uguale alla shadow cosi nn si vede e ridotto i px della shadow di 1
+
+-- il sito non si visualizza per bene in schermi piccoli perche mediaquery non funzionano
+
+
+
+
+
+-- se non metti nel reset    main = block, cn ie nn funzia
+--Make sure that you include this file after you link to your stylesheets. Otherwise, there may be a flash of unstyled content on the screen while the script loads. To help prevent high load times, it’s best to minify the shiv script, using a tool like JSCompress.

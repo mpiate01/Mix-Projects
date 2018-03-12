@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!--meta tag used to avoid automatic scaling of the page-->
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<title>Emblem Collectible Books</title>
+		<!--script html5shiv.js applied for IE 8 and below-->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!--[if lt IE 9]> 
+			<script src="javascript/html5shiv.js"></script> 
+		<![endif]-->
+	</head>
+	<body>
+		<!--Page container, Aria landamark roles applied all cross the page-->
+		<div id="page">
+		<!--Header of the page containing logo of the company, common links and main navigation bar-->
+			<header id="pageHeader" role="banner">
+			<!--Skip to a releted content links-->
+			<a class="skiplink" href="#pageMain">Skip to main content</a>
+			<a class="skiplink" href="#title">Skip to first form field </a>
+				<div class="commonLinks clearfix">
+					<ul>
+						<li><a href="contact_us.html">Contact us</a></li>
+						<li><a href="#">Accessibility</a></li>
+						<li><a href="#">Login</a></li>
+					</ul>
+				</div>
+				<div id="logo">	
+					<img src="images/logo.png" alt="company logo">
+					<h1>Emblem Rare, Collectible Books
+					
+					</h1>
+				</div>	
+				<!--Main navigation bar, with dropdown menu using css-->	
+				<nav id="topNav" class="clearfix" role="navigation">
+					<ul>
+						<li><a href="index.html" >Home</a></li>
+						<li class="dropdown"><a href="books.html" >Books</a>
+							<ul>
+								<li><a href="#">20<sup>th</sup> Century Books</a></li>
+								<li><a href="19th.html">19<sup>th</sup> Century Books</a></li>
+								<li><a href="#">18<sup>th</sup> Century Books</a></li>
+								<li><a href="#">Rare Books</a></li>
+							</ul>
+						</li>
+						<li><a href="delivery.html">Delivery</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Books as an investment</a></li>
+					</ul>
+				</nav> 			
+			</header>
+			<!--Main content-->
+			<main id="pageMain" role="main" class="clearfix">
+				<!--navigation tag used to increasy usability-->
+				<nav id="breadCrumbs" role="navigation">
+					<p>
+					<a href="index.html" title="Go to Home page">Home</a>
+				 	&rArr; Contact us
+					</p>
+				</nav>
+				<section id="content" class="contactUs">
+					<h2>Contact us</h2>
+					<p>Please feel free to contact is if you are looking to buy a book not listed in our collection, or you are looking to sell a book, have a book valued or have a book repaired. We try to answer all queries within 24 hours of receipt.</p>
+					<!--Form enhanced by Aria and Html5 properties-->
+					<form id="frmContact" action="contact_us.html" method="post" role="form">
+						<fieldset>
+							<legend>Contact us</legend>
+							<div class="controlgroup">
+								<label for="title">Title</label>
+								<select id="title" name="title">
+									<option value="1" selected="">Mr</option>
+									<option value="2">Mrs</option>
+									<option value="3">Miss</option>
+									<option value="4">Ms</option>
+									<option value="5">Dr</option>
+									<option value="6">Prof</option>
+								</select>
+								<label for="fname">First name</label>
+								<input type="text" name="fname" id="fname" placeholder="Please enter your first name...">
+								<label for="lname">Last name <span class="required">*</span></label>
+								<input type="text" name="lname" id="lname" aria-required="true" required="" placeholder="Please enter your last name...">
+							</div>
+							<div class ="controlgroup">
+								<label for="mail">Email <span class="required">*</span></label>
+								<input type="email" name="mail" id="mail" aria-required="true" required="" placeholder="Please enter your email address...">
+								<label for="query">Nature of query</label>
+								<select id="query" name="query">
+									<option value="1" selected="">Buy books</option>
+									<option value="2">Sell books</option>
+									<option value="3">Return a book</option>
+									<option value="4">Delivery</option>
+									<option value="5">Complaint</option>
+									<option value="6">Other</option>
+								</select>
+								<label for="msg">Message: <span class="required">*</span></label>
+								<textarea id="msg" name="message" aria-required="true" required="" placeholder="Type your message here..."></textarea>
+							</div>
+							<div class="controlgroup">
+								<input type="submit" name="submit" value="Send your query">
+							</div>
+						</fieldset>
+					</form>
+				</section>	
+				<!--Link used to go back to the top page-->
+				<nav id="toTop" role="navigation">
+					<a href="#pageMain">BACK TO TOP</a>
+				</nav>
+			</main>		
+			<!--Footer of the page-->	
+			<footer id="pageFooter" role="contentinfo">
+				<div class="commonLinks">
+					<ul>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Terms and Conditions</a></li>
+						<li><a href="#">Returns</a></li>
+					</ul>
+				</div>			
+			</footer>
+		</div>
+
+	</body>
+</html>
+
+
+
+
+

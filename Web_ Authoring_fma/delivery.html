@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!--meta tag used to avoid automatic scaling of the page-->
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<title>Emblem Collectible Books</title>
+		<!--script html5shiv.js applied for IE 8 and below-->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!--[if lt IE 9]> 
+			<script src="javascript/html5shiv.js"></script> 
+		<![endif]-->
+	</head>
+	<body>
+		<!--Page container, Aria landamark roles applied all cross the page-->
+		<div id="page">
+		<!--Header of the page containing logo of the company, common links and main navigation bar-->
+			<header id="pageHeader" role="banner">
+			<!--Skip to a releted content links-->
+			<a class="skiplink" href="#pageMain">Skip to main content</a>
+			<a class="skiplink" href="#d1">Skip to estimeted delivery times </a>
+				<div class="commonLinks clearfix">
+					<ul>
+						<li><a href="contact_us.html">Contact us</a></li>
+						<li><a href="#">Accessibility</a></li>
+						<li><a href="#">Login</a></li>
+					</ul>
+				</div>
+				<div id="logo">	
+					<img src="images/logo.png" alt="company logo">
+					<h1>Emblem Rare, Collectible Books
+					
+					</h1>
+				</div>	
+				<!--Main navigation bar, with dropdown menu using css-->	
+				<nav id="topNav" class="clearfix" role="navigation">
+					<ul>
+						<li><a href="index.html" >Home</a></li>
+						<li class="dropdown"><a href="books.html" >Books</a>
+							<ul>
+								<li><a href="#">20<sup>th</sup> Century Books</a></li>
+								<li><a href="19th.html">19<sup>th</sup> Century Books</a></li>
+								<li><a href="#">18<sup>th</sup> Century Books</a></li>
+								<li><a href="#">Rare Books</a></li>
+							</ul>
+						</li>
+						<li class="current"><a href="delivery.html">Delivery</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Books as an investment</a></li>
+					</ul>
+				</nav> 			
+			</header>
+			<!--Main content-->
+			<main id="pageMain" role="main" class="clearfix">
+				<!--navigation tag used to increasy usability-->
+				<nav id="breadCrumbs" role="navigation">
+					<p>
+					<a href="index.html" title="Go to Home page">Home</a>
+				 	&rArr; Delivey
+					</p>
+				</nav>
+				<section id="content" class="delivery">
+					<h2>Delivey</h2>
+					<p>All deliveries are included in the price of the book for books over £500. Otherwise the following rates apply:</p>
+					<!--Table with scope property applied-->
+					<div id="tableWrapper">	
+						<table>
+							<caption>
+								Delivery prices
+								<details>
+									<summary>Delivey prices for book up to £500, based on their weight</summary>
+									</details>
+							</caption>
+							<tbody>
+								<tr>					
+									<th></th>
+									<th scope="col">Up to 1kg</th>
+									<th scope="col">Over 1kg</th>
+									<th scope="col">Over 3kg</th>
+								</tr>
+								<tr>
+									<th scope="row">Uk</th>
+									<td>£5.99</td>
+									<td>£11.59</td>
+									<td>£33.99</td>
+								</tr>
+								<tr>
+									<th scope="row">Europe</th>
+									<td>£12.00</td>
+									<td>£25.00</td>
+									<td>£70.00</td>
+								</tr>
+								<tr>
+									<th scope="row">USA/Canada</th>
+									<td>£14.99</td>
+									<td>£27.00</td>
+									<td>£68.00</td>
+								</tr>
+								<tr>
+									<th scope="row">Rest of the World</th>
+									<td>£20.00</td>
+									<td>£25.00</td>
+									<td>£80.00</td>
+								</tr>
+							</tbody>	
+						</table>
+					</div>
+					<p>Deliveries are undertaken where appropriate by specialist fragile and valuable goods handlers. All goods are sent first-class to both the UK and abroad.</p>
+					<p>Estimated delivery times are as follows:</p>  
+					<!--description list enhanced by Aria properties-->
+					<dl>
+						<dt id="d1">UK:</dt>
+						<dd aria-labelledby="d1">1 to 2 days</dd>
+						<dt id="d2">Europe:</dt>
+						<dd aria-labelledby="d2">2 to 3 days</dd>
+						<dt id="d3">USA/Canada:</dt>
+						<dd aria-labelledby="d3">3 to 5 days</dd>
+						<dt id="d4">Rest of the World:</dt>
+						<dd aria-labelledby="d4">5 to 14 days</dd>
+					</dl>
+					<p>However, delivery times may differ if repair to books is requested before dispatch. </p>
+				</section>	
+				<!--Link used to go back to the top page-->
+				<nav id="toTop" role="navigation">
+					<a href="#pageMain">BACK TO TOP</a>
+				</nav>
+			</main>		
+			<!--Footer of the page-->	
+			<footer id="pageFooter" role="contentinfo">
+				<div class="commonLinks">
+					<ul>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Terms and Conditions</a></li>
+						<li><a href="#">Returns</a></li>
+					</ul>
+				</div>			
+			</footer>
+		</div>
+
+	</body>
+</html>

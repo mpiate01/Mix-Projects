@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!--meta tag used to avoid automatic scaling of the page-->
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<title>Emblem Collectible Books</title>
+		<!--script html5shiv.js applied for IE 8 and below-->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!--[if lt IE 9]> 
+			<script src="javascript/html5shiv.js"></script> 
+		<![endif]-->
+	</head>
+	<body>
+		<!--Page container, Aria landamark roles applied all cross the page-->
+		<div id="page">
+		<!--Header of the page containing logo of the company, common links and main navigation bar-->
+			<header id="pageHeader" role="banner">
+			<!--Skip to a releted content links-->
+			<a class="skiplink" href="#pageMain">Skip to main content</a>
+			<a class="skiplink" href="#pageSide">Skip to side content</a>
+				<div class="commonLinks clearfix">
+					<ul>
+						<li><a href="contact_us.html">Contact us</a></li>
+						<li><a href="#">Accessibility</a></li>
+						<li><a href="#">Login</a></li>
+					</ul>
+				</div>
+				<div id="logo">	
+					<img src="images/logo.png" alt="company logo">
+					<h1>Emblem Rare, Collectible Books</h1>
+				</div>
+				<!--Main navigation bar, with dropdown menu using css-->	
+				<nav id="topNav" class="clearfix" role="navigation">
+					<ul>
+						<li class="current"><a href="index.html" >Home</a></li>
+						<li class="dropdown"><a href="books.html" >Books</a>
+							<ul>
+								<li><a href="#">20<sup>th</sup> Century Books</a></li>
+								<li><a href="19th.html">19<sup>th</sup> Century Books</a></li>
+								<li><a href="#">18<sup>th</sup> Century Books</a></li>
+								<li><a href="#">Rare Books</a></li>
+							</ul>
+						</li>
+						<li><a href="delivery.html">Delivery</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Books as an investment</a></li>
+					</ul>
+				</nav> 			
+			</header>
+			<!--Main content divided in two main parts: section business and aside page-->
+			<main id="pageMain" role="main">
+				<section id="business">
+					<article>
+						<h2>Buying Rare Books</h2>
+						<p>Emblem are always looking to buy rare books.   We offer very competitive prices for appropriate books. All you need to do is contact us with details of the book or collection you are looking to sell.  We will need to know the following information,</p>
+						<ul>
+							<li>Author.</li>
+							<li>Title (exactly as it appears on the title page).</li>
+							<li>Publisher and publication date.</li>
+							<li>Edition (if known).</li>
+							<li>Brief description of the binding (cloth boards, leather-bound, with or lacking dustwrapper).</li>
+							<li>Description of the overall condition of the book,  including any major defects.</li>
+						</ul>
+						<p>If the book meets our requirements, we will contact you for more details. </p>
+						<figure>
+							<img src="images/index/rumour_at_nightfall.jpeg" alt="picture of Rumour at nightfall's book">
+							<figcaption>Rumour at Nightfall written by Graham Greene</figcaption>
+						</figure>
+					</article>
+					<article>
+						<h2>Selling Books</h2>					
+						<p>Emblem sells rare and collectable fiction and poetry. We are particularly interested in 18th and 19th century books, and have a world-renowned stock of latter 19th century women’s writing. Of particular interest are first editions, private press editions, and author signed copies. We also provide a restoration service, and consultancy on investment in rare books. We issue printed and illustrated catalogues of rare books twice a year. We also exhibit at book fairs in the UK, New Zealand, Canada and the USA. </p>
+						<figure>
+							<img src="images/index/ulysses.jpeg" alt="picture of Ulysses's book">
+							<figcaption>Ulysses written by James Joyce</figcaption>
+						</figure>
+					</article>
+					<article>
+						<h2>Valuing Books</h2>
+						<p>If you possess books you wish to sell then a formal valuation the most appropriate course of action. Emblem undertakes written valuations for insurance purposes or personal interest. We can appraise a single books or collections.</p>
+						<p>If you wish to have a book valued, a free initial verbal assessment of whether the book is likely to have sufficient value to merit a full valuation is recommended. If you decide to go ahead with the valuation, Emblem will provide you with an estimate of the cost before the valuation is carried out in full. Fees for valuation work are charged at a half day rate of £300. </p>
+					</article>
+				</section>
+				<aside role="complementary" id ="pageSide" >				
+					<section id="monthBook" class="clearfix">														
+						<h2>Book of the month</h2>
+						<article>			
+							<h3>The Heart of the Matter by Graham Greene</h3>
+							<p><strong>1900 copy. One of only 50 published in this edition.</strong> Excellent condition in its original blue cloth with publisher’s device stamped on cover. This book represents an excellent investment, and is expected to appreciate in value by 6% over the next three years. </p>
+							<div id="imageOuter">
+								<img src="images/index/heart_of_the_matter.jpg" alt="book of the month's picture">
+							</div>
+						</article>
+					</section>				
+					<div id ="newTech" >
+						<figure>
+							<!--Video tag, for a maximum browser compatibility 3 sorces and a downloadable format are given to the user-->
+							<video controls aria-describedby="vnT" >
+								<source src="video/emblem_video_480x360.webm" type="video/webm">
+								<source src="video/emblem_video_480x360.mp4" type="video/mp4">
+								<source src="video/emblem_video_480x360.ogg" type="video/ogg">
+								<p>Sorry, your browser does not support video. You can <a href="video/emblem_video_480x360.mp4">download</a> it instead</p>
+							</video>
+							<figcaption id="vnT">Emblem Collectible Books, Warehouse in Mile End - Using new technology to bring you old books</figcaption>
+						</figure>
+					</div>
+				</aside>
+				<!--Link used to go back to the top page-->
+				<nav id="toTop" role="navigation">
+					<a href="#pageMain">BACK TO TOP</a>
+				</nav>
+			</main>
+			<!--Footer of the page-->
+			<footer id="pageFooter" role="contentinfo">
+				<div class="commonLinks">
+					<ul>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Terms and Conditions</a></li>
+						<li><a href="#">Returns</a></li>
+					</ul>
+				</div>			
+			</footer>
+		</div>
+
+	</body>
+</html>
