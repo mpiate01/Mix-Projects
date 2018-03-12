@@ -1,0 +1,34 @@
+
+@media print 
+{ 
+@page{
+
+	margin: 0 !important;
+}	
+ div#woocop_order{
+ 	/*width: 4cm !important;*/
+ 	padding-left: 0 !important;
+ 	margin-left: 0 !important;
+ 	border-bottom: 2px solid black;
+ }
+
+ #woocop_order, #woocop_order .header, #woocop_order p, #woocop_order h4{
+ 	/*font-size: 8px !important;*/
+ 	width: 100% !important;
+  	padding: 0 !important;
+ 	margin: 0 !important;	
+ }
+ .no-print, #adminmenuwrap,#footer-thankyou,#footer-upgrade, #adminmenuback{
+ 	display: none;
+ }
+ body,html,#adminmenuwrap, #wpcontent
+ {
+ 	padding: 0;
+ 	margin: 0;
+ }
+
+}
+ #woocop_order strong {
+    font-weight: bold !important;
+	}
+
