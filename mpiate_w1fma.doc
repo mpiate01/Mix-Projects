@@ -1,0 +1,76 @@
+Failure points 
+• PHP has several configuration settings that could cause our script to fail: – File uploads can be disabled completely – The maximum size of uploaded files is restricted (can be as low as 2MB) – The number of files uploaded in one request is also restricted • File/Directory permissions on the server may not allow our script to do what it needs to do. 
+
+ Client-side problems may also cause problems for us. – The user's internet connection might fail while the file is being uploaded – They may have forgotten to select a file to upload 
+
+
+ The error element from the $_FILES array contains a code that allows us to assess the situation:
+
+ 
+***
+ Several issues might occur while uploading a file, the method upload_error_type on File class is used to asses the situation of the uploading process. The error element from $_FILE is used to check if any error occurs:
+ 	-	file size exceeded;
+ 	-	form size exceeded;
+ 	-	only a part file been uploaded;
+ 	-	no file has been uploaded;
+ 	- 	for future proofing, default error if any of the previous cases were not taking in consideration.
+
+
+ 	***********************
+ 	 	***********************
+ 	 	 	***********************
+
+ 	 	 	FOTO 
+
+ 	 	 	 	***********************
+ 	 	 	  	***********************
+ 	 	 	***********************
+ 	 	***********************
+
+If any errors will not occur, the method _uploadFile($file) (from File class) will be called to continue the uploading process.
+At this stage, few other checks will occur:
+	- if $file variable is an array;
+	- Check that the file has been legitimately uploaded;
+	- Check if file extension of the file uploaded is allowed;
+	- check if upload directory exists, if not, it will be created;
+	- check if the file is legitim by using default functions file_exists(), is_file() and s_readable();
+
+ 	***********************
+ 	 	***********************
+ 	 	 	***********************
+
+ 	 	 	FOTO 
+
+ 	 	 	 	***********************
+ 	 	 	  	***********************
+ 	 	 	***********************
+ 	 	***********************
+Following this process, the file image will be resize before been definitely uploaded and a releted thumbnail is created.
+Once the file is uploaded, all information regarding the image will be saved into the database.
+This operation will have 2 breaking points:
+	- connection to the database;
+	- execution of the query;
+
+ 	***********************
+ 	 	***********************
+ 	 	 	***********************
+
+ 	 	 	FOTO 
+
+ 	 	 	 	***********************
+ 	 	 	  	***********************
+ 	 	 	***********************
+ 	 	***********************
+
+At the beginning if any error would occur while operating with the database, there was a discrepancy on database records. The file was uploaded into the folder, but without record of it into the database. 
+Therefore to fix this issue, I have add an error checker referred to the database. In case of a database's error, it would delete the file uploaded into the directory.
+ 	***********************
+ 	 	***********************
+ 	 	 	***********************
+
+ 	 	 	FOTO 
+
+ 	 	 	 	***********************
+ 	 	 	  	***********************
+ 	 	 	***********************
+ 	 	***********************

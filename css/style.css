@@ -1,0 +1,12 @@
+#gallery li{
+	display: inline-block;
+	list-style-type: none;
+}
+#gallery li figcaption{
+	text-align: center;
+	font-weight: 600;
+}
+
+.error{
+	color: red;
+}
