@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Diabetes Risk Assessment Tool</title>
+		<link rel="stylesheet" href="css/diabetestool.css">
+		<script type="text/javascript" src="js/diabetestool.js"></script>
+	</head>
+	<body>
+		<div id="page">
+			<header id="pageHeader" role="banner">
+				<h1>The Diabetes Risk Assessment Tool</h1>
+			</header>
+			<main id="content" role="main">
+				<form id="pageForm" method="post" action="contact.html" role="form">
+					<fieldset>
+						<div class="controlGroup">
+							<label for="oldRadio">How old are you?</label>
+							<div id="oldRadio">
+								<input type="radio" name="old" id="old0" value="0" checked="">1-25
+								<input type="radio" name="old" id="old5" value="5">26-40
+								<input type="radio" name="old" id="old8" value="8">
+								41-60
+								<input type="radio" name="old" id="old10" value="10">60+
+							</div>
+						</div>
+						<div class="controlGroup">
+							<label for="bmiRadio">What is your BMI?</label>
+							<div id="bmiRadio">
+								<input type="radio" name="bmi" id="bmi0" value="0" checked="">0-25
+								<input type="radio" name="bmi" id="bmi00" value="0">26-30
+								<input type="radio" name="bmi" id="bmi9" value="9">31-35
+								<input type="radio" name="bmi" id="bmi10" value="10">35+
+							</div>
+						</div>
+						<div class="controlGroup">
+							<label for="famRadio">Does anybody in your family have diabetes?</label>
+							<div id="famRadio">
+								<input type="radio" name="family" id="family0" value="0" checked="">No
+								<input type="radio" name="family" id="family7" value="7">Grandparent
+								<input type="radio" name="family" id="family15" value="15">Sibling
+								<input type="radio" name="family" id="family115" value="15">Parent
+							</div>	
+						</div>
+						<div class="controlGroup">
+							<label for="dietRadio">How would you describe your diet?</label>
+							<div id="dietRadio">
+								<input type="radio" name="diet" id="diet0" value="0" checked="">Low sugar
+								<input type="radio" name="diet" id="diet00" value="0">Normal sugar
+								<input type="radio" name="diet" id="diet7" value="7">Quite high sugar
+								<input type="radio" name="diet" id="diet10" value="10">High sugar
+							</div>	
+						</div>		
+						<input type="button" name="btncalculate" value="Calculate" id="btncalculate">			
+					</fieldset>		
+					<fieldset>
+						<div id = "formMessage" class="controlGroup hide">
+							<h2>Your Result</h2>
+							<p id="message"></p>							
+						</div>
+					</fieldset>
+				</form>
+			</main>
+			<footer id="pageFooter" role="contentinfo">
+				<p>Copyright by Zedland Health Authority</p>			
+			</footer>
+		</div>
+	</body>
+</html>

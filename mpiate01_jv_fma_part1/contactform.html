@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+ 		<title>Contact the Zedland Health Authority</title>
+ 		<link rel="stylesheet" href="css/diabetestool.css">
+		<script type="text/javascript" src="js/contactform.js"></script>
+	 </head>
+ 	<body>
+		<div id="page">
+			<header id="pageHeader" role="banner">
+				<h1>Contact the Zedland Health Authority</h1>
+			</header>
+			<main id="content" role="main">
+				<form id="frm1" method="post" action="contact.html" role="form">
+					<fieldset>
+						<div class="controlGroup">
+ 							<label for="fname">Enter your First Name: <span>*</span></label>
+ 							<input type="text" name="fname" id="fname"><span id="fnameErr" class="error hide">You must enter a valid first name</span>
+ 						</div>
+ 						<div class="controlGroup">
+ 							<label for="lname">Enter your Last Name: <span>*</span></label>
+ 							<input type="text" name="lname" id="lname"><span id="lnameErr" class="error hide">You must enter a valid last name</span>
+ 						</div>
+ 						<div class="controlGroup">	
+ 							<label for="title">Select a title: <span>*</span></label>
+ 							<select id="title" name="title">
+ 								<option value=""></option>
+ 								<option value="Mr">Mr</option>
+ 								<option value="Ms">Ms</option>
+ 								<option value="Mrs">Mrs</option>
+ 								<option value="Miss">Miss</option>
+ 								<option value="Master">Master</option>
+ 							</select><span id="titleErr" class="error hide">You must enter a valid title</span>
+ 						</div>
+ 						<div class="controlGroup">
+ 							<div class="questionmark" id="qmark"></div>
+ 							<div class="tooltip hide" id="tip">If you do not know your ZHA number, please contact your GP</div>
+ 							<label for="zha" class="zha">Enter your Health Authority Number: <span>*</span> </label>
+ 							<input type="text" name="zha" id="zha"><span id="zhaErr" class="error hide">You must enter a valid ZHA number</span> 							
+ 						</div>
+ 						<div class="controlGroup">
+ 							<label for="email">Enter your Email: <span>*</span></label>
+ 							<input type="text" name="email" id="email"><span id="emailErr" class="error hide">You must enter a valid email address</span>
+ 						</div>
+ 						<div class="controlGroup">	
+ 							<label for="tnumber">Enter your telephone number:</label>
+ 							<input type="text" name="tnumber" id="tnumber"><span id="tnumberErr" class="error hide">You must enter a valid telephone number</span>
+ 						</div>
+ 						<input type="submit" name="submit" value="Submit">
+ 					</fieldset>
+ 				</form>
+ 			</main>
+ 			<footer id="pageFooter" role="contentinfo">
+				<p>Copyright by Zedland Health Authority</p>			
+			</footer>
+ 		</div>	
+ 	</body>
+</html>
+ 

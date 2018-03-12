@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+ 		<title>Contact the Zedland Health Authority</title>
+ 		<link rel="stylesheet" href="css/contactform_jq.css">
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/contactform_jq.js"></script>				
+	 </head>
+ 	<body>
+		<div id="page">
+			<header id="pageHeader" role="banner">
+				<h1>Contact the Zedland Health Authority</h1>
+			</header>
+			<main id="content" role="main">
+				<form id="frm1" method="post" action="jq_contact.html" role="form">
+					<fieldset>
+						<div class="controlGroup">
+ 							<label for="fname">Enter your First Name: <span>*</span></label>
+ 							<input type="text" name="fname" id="fname"><label class="error"></label>
+ 						</div>
+ 						<div class="controlGroup">
+ 							<label for="lname">Enter your Last Name: <span>*</span></label>
+ 							<input type="text" name="lname" id="lname"><label class="error"></label>
+ 						</div>
+ 						<div class="controlGroup">	
+ 							<label for="title">Select a title: <span>*</span></label>
+ 							<select id="title" name="title">
+ 								<option value=""></option>
+ 								<option value="Mr">Mr</option>
+ 								<option value="Ms">Ms</option>
+ 								<option value="Mrs">Mrs</option>
+ 								<option value="Miss">Miss</option>
+ 								<option value="Master">Master</option>
+ 							</select><label class="error"></label>
+ 						</div>
+ 						<div class="controlGroup">
+ 							<div class="questionmark" id="qmark"></div>
+ 							<div class="tooltip hide" id="tip">If you do not know your ZHA number, please contact your GP</div>
+ 							<label for="zha" class="zha">Enter your Health Authority Number: <span>*</span> </label>
+ 							<input type="text" name="zha" id="zha">	<label class="error"></label>						
+ 						</div>
+ 						<div class="controlGroup">
+ 							<label for="email">Enter your Email: <span>*</span></label>
+ 							<input type="text" name="email" id="email"><label class="error"></label>
+ 						</div>
+ 						<div class="controlGroup">	
+ 							<label for="tnumber">Enter your telephone number:</label>
+ 							<input type="text" name="tnumber" id="tnumber"><label class="error"></label>
+ 						</div>
+ 						<input type="submit" name="submit" value="Submit">
+ 					</fieldset>
+ 				</form>
+ 			</main>
+ 			<footer id="pageFooter" role="contentinfo">
+				<p>Copyright by Zedland Health Authority</p>			
+			</footer>
+ 		</div>	
+ 	</body>
+</html>

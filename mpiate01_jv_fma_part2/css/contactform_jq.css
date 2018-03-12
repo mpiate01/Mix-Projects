@@ -1,0 +1,83 @@
+#page{
+	width: 95%;
+}
+#page h1{
+	text-align: center;
+}
+#pageForm, #frm1{
+	background-color: #f1f1f1;
+	margin: 0 auto;
+	padding: 1em;
+}
+#pageForm fieldset:first-child{
+	margin-bottom: 2em;
+}
+#pageForm fieldset{
+	padding: 0 3em 2em;
+}
+.controlGroup{
+	margin: 2.5em 0;
+}
+#pageForm .controlGroup label, #frm .controlGroup label{
+	float: left;
+	width: 35%;
+}
+#old0, #bmi0, #family0, #diet0{
+	margin-left: 1em;
+}
+#frm1 fieldset{
+	padding-bottom: 2em;
+	padding-left: 12%;
+}
+#frm1 .controlGroup label{
+    
+    margin-right: 2%;
+}
+#frm1 label span{
+	color: red;
+}
+#frm1 input[type=text]{
+	width: 20%;
+}
+#frm1 span.error, #frm1 label.error {
+    color: #ff0000;
+    font-size: 0.75em;
+    font-style: italic;
+    margin-left: 1em;
+}
+.show{
+	display: inline-block;
+}
+.hide{
+	display: none;
+}
+#zha{
+	color: #A8A8A8;
+}
+#zha.onfocus{
+	color: #000;
+}
+.onblur{
+	color: #A8A8A8;
+}
+.questionmark {
+    background: url(../img/questionmark.jpg) top left no-repeat;
+    padding: 1em;
+    position: absolute;
+    left: 11%;
+    margin-top: -7px;
+}
+
+.tooltip {
+    position: absolute;
+    margin-top: -38px;
+    width: 323px;
+	color: #ffffff;
+	padding: 9px 10px 10px 21px;
+	background:url(../img/tooltipbg.gif) top left no-repeat;
+	font:0.65em Arial, Helvetica, sans-serif;
+}
+
+#pageFooter p{
+	font-style: italic;
+}
