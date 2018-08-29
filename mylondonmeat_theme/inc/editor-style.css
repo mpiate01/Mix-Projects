@@ -1,0 +1,308 @@
+/*
+Theme Name: ceight
+Description: Used to style the TinyMCE editor.
+*/
+
+
+/**
+ * Typography
+ */
+body,
+button,
+input,
+select,
+textarea {
+	color: #000;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+        font-family: 'Lobster', cursive;
+        line-height: 1.3em;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+        color: #a7301f;
+}
+
+h1{
+        font-size: 2.4em;
+}
+
+h2{
+        font-size: 2.2em;
+}
+
+h3{
+        font-size: 2em;
+}
+
+h4{
+        font-size: 1.8em;
+}
+
+h5{
+        font-size: 1.6em;
+}
+
+h6{
+        font-size: 1.4em;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+.site-content{
+    font-size: 1.3em;
+    line-height: 1.6em;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+blockquote{
+        font-size: 110%;
+        line-height: 1.15em;
+        margin: 1.25em 0 1.25em 1.75em;
+        position: relative;
+}
+blockquote::before{
+        font-family: 'FontAwesome';
+        content: '\f10d';
+        position: absolute;
+        left: -1.5em;
+        top: -0.75em;
+        color: #000;            
+}
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+	margin: 0 0 1.5em 2.05em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+ /**
+  * Alignments
+  */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/**
+ * Captions
+ */
+
+wp-caption {
+        font-family: 'Raleway';
+        font-style: italic;
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+.wp-caption.aligncenter{
+        margin-top: 2em;
+        margin-bottom: 1em;
+}
+.wp-caption.alignright,
+.wp-caption.alignleft{
+        margin-top: 0;
+        margin-bottom: 1em;
+}
+.wp-caption em{
+        font-style: normal;
+}
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption-text {
+        display: block;
+	text-align: center;
+        margin: 1em 0 0 0;
+        padding: 0 0 0.5em 0;
+        font-size: 85%;
+        color: #5b5b5b;
+        border-bottom: 1px solid #5b5b5b;
+}
+/**
+ * Galleries
+ */
+
+.gallery {
+	margin: 1.5em 0;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+        padding: 1em;
+}
+.gallery-item img{
+        display: block;
+        margin: 0 auto;
+}
+.gallery-item a:hover img,
+.gallery-item a:focus img{
+        outline:2px solid #a7301f;
+}
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+

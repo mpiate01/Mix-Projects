@@ -1,0 +1,1 @@
+If you need the black and white version change his name to menu.png.
